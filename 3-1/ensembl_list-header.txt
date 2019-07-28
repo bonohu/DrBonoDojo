@@ -1,0 +1,3 @@
+#!/bin/sh
+lftp <<-END
+        open ftp.ensembl.org/pub/current_fasta

@@ -1,0 +1,24 @@
+select distinct ?taxonid ?species ?order ?family ?subfamily
+where {
+  graph <http://togogenome.org/graph/taxonomy> {
+    ?sp a <http://ddbj.nig.ac.jp/ontologies/taxonomy/Taxon> .
+    ?sp <http://purl.org/dc/terms/identifier> ?taxonid .
+    ?sp rdfs:label ?species .
+    filter(?taxonid IN(9606, 10090, 7091, 29053))
+    ?sp rdfs:subClassOf+ ?parentsf .
+    ?parentsf rdfs:label ?subfamily;
+      <http://ddbj.nig.ac.jp/ontologies/taxonomy/rank> ?taxranksf .
+    ?taxranksf rdfs:label ?ranksf .
+    filter(?ranksf = "subfamily")
+    ?parentsf rdfs:subClassOf+ ?parentfm .
+    ?parentfm rdfs:label ?family;
+      <http://ddbj.nig.ac.jp/ontologies/taxonomy/rank> ?taxrankfm .
+    ?taxrankfm rdfs:label ?rankfm .
+    filter(?rankfm = "family")
+    ?parentfm rdfs:subClassOf+ ?parentod .
+    ?parentod rdfs:label ?order;
+      <http://ddbj.nig.ac.jp/ontologies/taxonomy/rank> ?taxrankod .
+    ?taxrankod rdfs:label ?rankod .
+    filter(?rankod = "order")
+  }
+}

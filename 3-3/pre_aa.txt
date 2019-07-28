@@ -1,0 +1,11 @@
+G5EGD2  Hypoxia-inducible factor 1 OS=Caenorhabditis elegans OX=6...  1498    0.0  
+Q0PGG7  Hypoxia-inducible factor 1-alpha OS=Bos mutus grunniens O...  181     1e-46
+Q9XTA5  Hypoxia-inducible factor 1-alpha OS=Bos taurus OX=9913 GN...  180     2e-46
+Q61221  Hypoxia-inducible factor 1-alpha OS=Mus musculus OX=10090...  179     4e-46
+Q9YIB9  Hypoxia-inducible factor 1-alpha OS=Gallus gallus OX=9031...  179     7e-46
+Q16665  Hypoxia-inducible factor 1-alpha OS=Homo sapiens OX=9606 ...  177     3e-45
+Q309Z6  Hypoxia-inducible factor 1-alpha OS=Eospalax fontanierii ...  176     5e-45
+O35800  Hypoxia-inducible factor 1-alpha OS=Rattus norvegicus OX=...  175     2e-44
+Q98SW2  Hypoxia-inducible factor 1-alpha OS=Oncorhynchus mykiss O...  164     3e-41
+Q9I8A9  Hypoxia-inducible factor 1-alpha OS=Xenopus laevis OX=835...  140     4e-33
+
